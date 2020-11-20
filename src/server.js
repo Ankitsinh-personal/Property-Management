@@ -24,7 +24,7 @@ var user = new mongoose.Schema({
     country : String,
     city : String,
     state : String,
-    pin : Number
+    pin : Number,
 });
 
 var userdata = mongoose.model("userdata", user);
@@ -40,6 +40,7 @@ app.post("/userentry", async (req, res) => {
         ud.city = req.body.city
         ud.state = req.body.state
         ud.pin = req.body.pin
+        
         ud.save(function(err, data) {
         if (err) {
           console.log("Sign up error" + err);
