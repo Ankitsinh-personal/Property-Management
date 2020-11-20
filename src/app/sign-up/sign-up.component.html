@@ -1,0 +1,34 @@
+<h2>User Registeration</h2>
+<form (submit)="RegisterDataEntry($event)">
+<div  >
+    <input  type="text" id="name" placeholder="Name">
+</div>
+<div  >
+    <input  type="password" id="password" placeholder="Password">
+</div>
+<div >
+    <input type="text" id="dob" placeholder="DOB">
+</div>
+<div  >
+    <input  type="text" id="address" placeholder="Address">
+</div>
+<div>
+    <input  type="text" id="country" placeholder="Country">
+</div>
+<div  >
+    <input type="text" id="city" placeholder="City">
+</div>
+<div >
+    <input  type="text" id="state" placeholder="State">
+</div>
+<div  >
+    <input  type="text" id="pin" placeholder="Pin">
+</div>
+<div >
+<button  type="submit">Submit</button>
+ </div>
+ <div >
+ <br>
+<a [routerLink]="['/userlogin']">Login</a>
+ </div>
+</form>

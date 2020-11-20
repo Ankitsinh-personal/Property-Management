@@ -1,0 +1,31 @@
+<div >
+  <table border="2">
+
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let obj of URequest">
+        <td>{{obj.title}}</td>
+        <td>{{obj.description}}</td>
+        <td>{{obj.country}}</td>
+        <td>{{obj.state}}</td>
+        <td>{{obj.city}}</td>
+        <td><img src="{{obj.image}}"  width="150" height="150"></td>
+       </tr>
+    </tbody>
+  </table>
+   <div >
+ <br>
+<a [routerLink]="['/addproperty']">AddProperty</a>
+ </div>
+</div>
+
